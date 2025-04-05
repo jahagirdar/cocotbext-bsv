@@ -62,7 +62,7 @@ def _get_deps(base_deps: Mapping[str, Mapping[str, str]]) -> dict[str, dict[str,
     again = True
     while again:
         again = False
-        for pkg_name in lock_pkgs.items():
+        for pkg_name in lock_pkgs:
             if pkg_name in deps:
                 for pkg_dependency in lock_pkgs[pkg_name].get("dependencies", []):
                     parsed = regex.match(pkg_dependency).groupdict()  # type: ignore[union-attr]

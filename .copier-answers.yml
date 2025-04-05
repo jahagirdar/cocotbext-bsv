@@ -1,9 +1,9 @@
-_commit: v0.0.1
+_commit: v0.0.3
 _src_path: gh:dyu-copier/cocotbext
 author: Vijayvithal Jahagirdar
 email: jvs@dyumnin.com
 extension_name: bsv
-project_long_desc: Action, ActionValue, Method, FIFO, GETPUT and many other standard
-    interfaces from cocotb library.
+project_long_desc: Drivers for Action, ActionValue, Method, FIFO, GETPUT and many
+    other standard interfaces from cocotb library.
 project_name: cocotbext_bsv
 project_short_desc: Drivers for Bluespec standard types.

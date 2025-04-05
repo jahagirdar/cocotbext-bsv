@@ -42,10 +42,10 @@ version_format = "version:format_version"
 [tool.pdm.dev-dependencies]
 duty = ["duty>=0.10"]
 ci-quality = [
-    "peakrdl-cocotb-ralgen[duty,docs,quality,typing,security]",
+    "cocotbext_bsv[duty,docs,quality,typing,security]",
     "griffe>=1.5.1",
 ]
-ci-tests = ["peakrdl-cocotb-ralgen[duty,tests]"]
+ci-tests = ["cocotbext_bsv[duty,tests]"]
 docs = [
     "black>=23.9",
     "markdown-callouts>=0.3",

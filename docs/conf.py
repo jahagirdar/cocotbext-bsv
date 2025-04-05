@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "cocotb-ralgen"
-copyright = "2023, Vijayvithal"
-author = "Vijayvithal"
+project = "cocotbext_bsv"
+copyright = "2023, Vijayvithal Jahagirdar"
+author = "Vijayvithal Jahagirdar"
 release = "0.1"
 
 # -- General configuration ---------------------------------------------------

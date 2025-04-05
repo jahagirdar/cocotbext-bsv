@@ -89,10 +89,11 @@ ignore = [
 "S603",
 "E402",
 "S607",
+"PLC0206",
 ]
 
 [per-file-ignores]
-"src/peakrdl_cocotb_ralgen/testcases/*.py"=[
+"src/cocotbext/bsv/testcases/*.py"=[
 "S101",
 "S311",
 "FBT002",
@@ -103,7 +104,7 @@ ignore = [
     "T201",  # Print statement
 "INP001",
 ]
-"src/*/ralgen.py" = [
+"src/*/bsv.py" = [
     "T201",  # Print statement
 ]
 "src/*/debug.py" = [

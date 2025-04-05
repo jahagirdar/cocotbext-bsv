@@ -13,16 +13,16 @@ These tools will define their fields in a fixed pattern, e.g. `<prefix>_<Registe
 
 To add support to a particular style of signal naming,
 
-1. create a new file under `src/peakrdl_cocotb_ralgen/callbacks/bsv.py`
+1. create a new file under `src/cocotbext/bsv/callbacks/bsv.py`
 	2.  Preferably name the file as <toolname>.py
 3. define your class and define the read and write functions in it.
 4. submit a PR.
 
 ### Adding support for a new TestCases.
-The current version of cocotb-ralgen supports reset check and simple rw_test with foreground and background read/write combinations.
+The current version of bsv supports reset check and simple rw_test with foreground and background read/write combinations.
 There are a bunch of additional tests that are normally written for checking registers.
 To contribute a new test:
-1. Add your test to `src/peakrdl_cocotb_ralgen/testcases` folder
+1. Add your test to `src/cocotbext/bsv/testcases` folder
 2. Submit a PR.
 
 
@@ -34,7 +34,7 @@ Nothing easier!
 Fork and clone the repository, then:
 
 ```bash
-cd cocotb-ralgen
+cd cocotbext/bsv
 pdm install
 ```
 
@@ -55,7 +55,6 @@ pdm install
 
 You now have the dependencies installed.
 
-You can run the application with `pdm run peakrdl cocotb_ralgen [ARGS...]`.
 
 
 ## Tasks
