@@ -1,0 +1,33 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    - id: check-added-large-files
+    - id: no-commit-to-branch
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-json
+      args: ['--branch', 'master','--branch','dev','--branch','release']
+    - id: name-tests-test
+    - id: requirements-txt-fixer
+    - id: check-docstring-first
+    - id: check-merge-conflict
+      args:
+        - '--assume-in-merge'
+    - id: check-toml
+    - id: check-xml
+    - id: forbid-new-submodules
+    - id: mixed-line-ending
+- repo: https://github.com/psf/black
+  rev: 24.4.2
+  hooks:
+    - id: black
+- repo: https://github.com/jumanjihouse/pre-commit-hooks
+  rev: 3.0.0
+  hooks:
+  - id: forbid-binary
+- repo: https://github.com/mrtazz/checkmake.git
+  rev: 0.2.2
+  hooks:
+  - id: checkmake
